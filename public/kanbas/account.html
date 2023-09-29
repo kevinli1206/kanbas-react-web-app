@@ -6,77 +6,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top;">
-                    <ul>
-                        <li>
-                            <a href="account.html"> Account </a>
-                        </li>
-                        <li>
-                            <a href="#"> Dashboard </a>
-                        </li>
-                        <li>
-                            <a href="courses.html"> Courses </a>
-                        </li>
-                        <li>
-                            <a href="#"> Calendar </a>
-                        </li>
-                        <li>
-                            <a href="#"> Inbox </a>
-                        </li>
-                        <li>
-                            <a href="#"> History </a>
-                        </li>
-                        <li>
-                            <a href="#"> Studio </a>
-                        </li>
-                        <li>
-                            <a href="#"> Commons </a>
-                        </li>
-                        <li>
-                            <a href="#"> Help </a>
-                        </li>
-                    </ul>
-                </td>
-                <td style="vertical-align: top;">
-                    <ul>
-                        <li>
-                            <a href="#"> Notifications </a>
-                        </li>
-                        <li>
-                            <a href="profile/index.html"> Profile </a>
-                        </li>
-                        <li>
-                            <a href="#"> Files </a>
-                        </li>
-                        <li>
-                            <a href="#"> Settings </a>
-                        </li>
-                        <li>
-                            <a href="#"> ePortfolios </a>
-                        </li>
-                        <li>
-                            <a href="#"> Shared Content </a>
-                        </li>
-                        <li>
-                            <a href="#"> The Hub </a>
-                        </li>
-                        <li>
-                            <a href="#"> Qwickly Course Tools </a>
-                        </li>
-                        <li>
-                            <a href="#"> Global Announcements </a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div>
+        <div class="wd-sidebar">
+            <div class="wd-table-header">
+                <img src="../images/northeastern.png" class="wd-header-image" alt="...">
+            </div>
+                <ul class="wd-sidebar-list">
+                    <li id="wd-sidebar-selected">
+                        <div id="wd-account-grey">
+                            <a href="account.html">
+                                <i class="far fa-user-circle wd-account-link"></i><br>
+                                Account
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i><br>
+                            Dashboard </a>
+                    </li>
+                    <li>
+                        <a href="courses.html"> <i class="fas fa-book"></i><br>Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-calendar-alt"></i><br>Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-inbox"></i><br>Inbox </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="far fa-clock"></i><br>History </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-desktop" ></i><br>Studio </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-arrow-alt-circle-right"></i><br>Commons </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="far fa-question-circle"></i><br>Help
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="wd-account-options">
+            <div class="wd-profile-header">
+                <i class="fas fa-grip-lines"></i>
+                <h3> Jose Annunziato's Profile </h3>
+            </div>
+            <hr class="wd-hr-line">
+            <div>
+            <ul class="wd-account-list">
+                <li>
+                    <a href="#"> Notifications </a>
+                </li>
+                <li id="wd-profile-selected">
+                    <a href="profile/index.html"> Profile </a>
+                </li>
+                <li>
+                    <a href="#"> Files </a>
+                </li>
+                <li>
+                    <a href="#"> Settings </a>
+                </li>
+                <li>
+                    <a href="#"> ePortfolios </a>
+                </li>
+                <li>
+                    <a href="#"> Shared Content </a>
+                </li>
+                <li>
+                    <a href="#"> The Hub </a>
+                </li>
+                <li>
+                    <a href="#"> Qwickly Course Tools </a>
+                </li>
+                <li>
+                    <a href="#"> Global Announcements </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="wd-profile-section">
+            <i class="fas fa-user-circle fa-8x"></i>
+            <h3>Jose Annunziato</h3>
+            <h4>Contact</h4>
+            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+            <h4>Biography</h4>
+            <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+            <h4>Links</h4>
+            <ul>
+                <li>
+                    <i class="fas fa-link"></i>
+                    <a href="https://www.youtube.com/webdevtv">Youtube</a>
+                    <i class="fas fa-external-link-square-alt"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="wd-edit-profile-button">
+            <div class="float-end">
+            <a href="profile/edit.html" class="btn btn-secondary">
+                <i class="fas fa-pencil-alt fa-rotate-270"></i>
+                Edit Profile</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
