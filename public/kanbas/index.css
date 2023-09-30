@@ -237,6 +237,7 @@
     margin-top: 20px;
     padding-left: 13px;
     display: inline-block;
+    overflow: hidden;
     width: max-content;
 }
 
@@ -378,4 +379,57 @@
 
 .wd-modules-full-width-header .wd-header-content .wd-header-text {
     text-align: center;
+}
+
+.wd-assignments {
+    padding-top: 100px;
+    float: none;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.wd-assignments .wd-assignments-search {
+    float: left;
+    font-size: small;
+}
+
+.wd-assignments .wd-assignments-buttons {
+    float: right;
+}
+
+.wd-assignments .wd-assignments-hr {
+    padding-top: 20px;
+}
+
+.wd-green-left-border {
+    border-left-width: medium;
+    border-left-color: green;
+}
+
+.wd-assignments-text {
+    text-align: left;
+    padding-left: 70px;
+    font-size: smaller;
+}
+
+.wd-assignments-text a {
+    color: black;
+}
+
+.wd-edit-assignments .assignment-forms {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-overflow: clip;
+}
+
+.wd-edit-assignments .assignment-forms .wd-submission-type {
+    width: 70%;
+}
+
+.wd-full-button-width {
+    width: 100%;
+}
+
+.wd-edit-footer {
+    margin-bottom: 60px;
 }
