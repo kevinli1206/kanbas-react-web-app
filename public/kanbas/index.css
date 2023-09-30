@@ -433,3 +433,7 @@
 .wd-edit-footer {
     margin-bottom: 60px;
 }
+
+.wd-edit-footer a {
+    text-decoration: none;
+}
