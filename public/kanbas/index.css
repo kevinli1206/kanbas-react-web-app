@@ -437,3 +437,16 @@
 .wd-edit-footer a {
     text-decoration: none;
 }
+
+.wd-grades {
+    padding-top: 50px;
+}
+
+.wd-apply-filters {
+    margin-bottom: 10px;
+}
+
+.wd-student-link a{
+    text-decoration: none;
+    color:red;
+}

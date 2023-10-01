@@ -6,9 +6,395 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="wd-sidebar">
+        <div class="wd-table-header">
+            <img src="../images/northeastern.png" class="wd-header-image" alt="...">
+        </div>
+        <ul class="wd-sidebar-list">
+            <li>
+                <div id="wd-account-grey">
+                    <a href="../account.html">
+                        <i class="far fa-user-circle wd-account-link"></i><br>
+                        Account
+                    </a>
+            </li>
+            <li>
+                <a href="../dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i><br>
+                    Dashboard </a>
+            </li>
+            <li id="wd-sidebar-selected">
+                <a href="../courses.html"> <i class="fas fa-book"></i><br>Courses
+                </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fas fa-calendar-alt"></i><br>Calendar
+                </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fas fa-inbox"></i><br>Inbox </a>
+            </li>
+            <li>
+                <a href="#"> <i class="far fa-clock"></i><br>History </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fas fa-desktop"></i><br>Studio </a>
+            </li>
+            <li>
+                <a href="#"> <i class="fas fa-arrow-alt-circle-right"></i><br>Commons </a>
+            </li>
+            <li>
+                <a href="#"> <i class="far fa-question-circle"></i><br>Help
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="wd-account-options">
+        <div class="wd-home-header">
+            <i class="fas fa-grip-lines"></i>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="home.html">CS5610.11744.202310</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+            </nav>
+        </div>
+        <hr class="wd-hr-line">
+        <div>
+            <ul class="wd-account-list">
+                <li>
+                    <a href="../home.html"> Home </a>
+                </li>
+                <li>
+                    <a href="#"> Modules </a>
+                </li>
+                <li>
+                    <a href="#"> Piazza </a>
+                </li>
+                <li>
+                    <a href="#"> Zoom Meetings </a>
+                </li>
+                <li>
+                    <a href="index.html"> Assignments </a>
+                </li>
+                <li>
+                    <a href="#"> Quizzes </a>
+                </li>
+                <li id="wd-profile-selected">
+                    <a href="../grades.html"> Grades </a>
+                </li>
+                <li>
+                    <a href="#"> People </a>
+                </li>
+                <li>
+                    <a href="#"> Panopto Video </a>
+                </li>
+                <li>
+                    <a href="#"> Discussions </a>
+                </li>
+                <li>
+                    <a href="#"> Announcements </a>
+                </li>
+                <li>
+                    <a href="#"> Pages </a>
+                </li>
+                <li>
+                    <a href="#"> Files </a>
+                </li>
+                <li>
+                    <a href="#"> Rubrics </a>
+                </li>
+                <li>
+                    <a href="#"> Outcomes </a>
+                </li>
+                <li>
+                    <a href="#"> Collaborations </a>
+                </li>
+                <li>
+                    <a href="#"> Syllabus </a>
+                </li>
+                <li>
+                    <a href="#"> Progress Reports (EAB Navigate) </a>
+                </li>
+                <li>
+                    <a href="#"> Settings </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wd-assignments">
+        <div class="wd-assignments-buttons float-end">
+            <button type="button" class="btn btn-secondary btn-sm">
+                <i class="fas fa-file-import"></i>Import</button>
+            <button type="button" class="btn btn-secondary btn-sm">
+                <i class="fas fa-file-export fa-flip-horizontal"></i>Export
+                <i class="fas fa-chevron-down"></i></button>
+            <button type="button" class="btn btn-secondary btn-sm">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+        <div class="wd-grades">
+            <div class="row">
+                <div class="col">
+                    <h6>Student Names</h6>
+                </div>
+                <div class="col">
+                    <h6>Assignment Names</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="student-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search Students" id="student-search">
+                        <span class="input-group-text" id="student-search">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="assignment-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search Assignments" id="assignment-search">
+                        <span class="input-group-text" id="student-search">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                      </div>
+                </div>
+            </div>
+            <div class="wd-apply-filters">
+                <button type="button" class="btn btn-secondary btn-sm">
+                    <i class="fas fa-filter pe-2"></i>Apply Filters
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+              <tbody>
+                <tr class="align-middle">
+                  <td class="align-middle">
+                    Student Name
+                  </td>
+                  <td class="text-center">
+                    A1 SETUP<br> Out of 100
+                  </td>
+                  <td class="text-center">
+                    A2 HTML<br> Out of 100
+                  </td>
+                  <td class="text-center">
+                    A3 CSS<br> Out of 100
+                  </td class="text-center">
+                  <td class="text-center">
+                    A4 BOOTSTRAP SETUP<br> Out of 100
+                  </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Doxa Asibey</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        89.59%
+                    </td>
+                    <td class="text-center">
+                        98.65%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Thuy Tien Bui</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        <input type="text" class="form-control text-center" value="91.5%" id="student-grade">
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Yetong Chen</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        97%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Zhenyu Chen</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        98.64%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Yung-Shin Chien</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Basil Coughlan</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        99.32%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Rachel Dao</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Lana Do</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Kartikey Dwivedi</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Jiarong Feng</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        94.24%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="wd-student-link">
+                        <a href="#">Saurabh Sunil Gade</a>
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                    <td class="text-center">
+                        100%
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+          </div>
+    </div>
+</body>
+
+<!-- <body>
     <table width="100%">
         <tbody>
             <tr>
@@ -162,6 +548,6 @@
             </tr>
         </tbody>
     </table>
-</body>
+</body> -->
 
 </html>
