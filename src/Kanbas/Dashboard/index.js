@@ -4,7 +4,7 @@ import "./index.css";
 function Dashboard() {
   const courses = db.courses;
   return (
-    <div className="wd-dashboards">
+    <div className="wd-dashboard">
       <div>
         <h2> Dashboard </h2>
         <hr class="wd-hr-line" />
