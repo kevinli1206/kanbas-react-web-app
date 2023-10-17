@@ -1,0 +1,482 @@
+.wd-sidebar {
+    background-color: black;
+    max-width: 85px;
+    min-width: 75px;
+    font-size: small;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    text-align: center;
+    float: left;
+    height: 100%;
+}
+
+.wd-header-image {
+    background-color: black;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wd-sidebar-list {
+    background-color: black;
+    color: red;
+    padding: 0px;
+    text-align: center;
+}
+
+/* .wd-sidebar-list li {
+    background-color: black;
+    color: red;
+    padding: 5px;
+    margin-bottom: 10px;
+} */
+
+.wd-sidebar-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-sidebar-list a.active {
+    background-color: white;
+    color: red;
+}
+
+.wd-account-link-color {
+    color: grey;
+}
+
+.wd-sidebar-link-color {
+    color: red;
+}
+
+#wd-account-grey i {
+    color: grey;
+}
+
+#wd-sidebar-selected {
+    background-color: white;
+}
+
+#wd-sidebar-selected a {
+    color: red;
+}
+
+.wd-account-option {
+    width: 190px;
+    font-size: medium;
+    font-style: normal;
+    float: left;
+    padding-left: 20px;
+    height: 100%;
+}
+
+.wd-profile-header {
+    margin-top: 20px;
+    padding-left: 13px;
+    display: inline-block;
+    width: max-content;
+}
+
+.wd-profile-header i {
+    color: red;
+}
+
+.wd-profile-header h3 {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.wd-account-lists {
+    list-style-type: none;
+    color: red;
+    text-align: left;
+    margin-top: 20px;
+
+}
+
+.wd-hr-line {
+    width: 94vw;
+}
+
+.wd-account-lists li {
+    margin-bottom: 20px;
+
+}
+
+.wd-account-lists a {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.wd-account-lists a.active {
+    padding-left: 8px;
+    border-style: solid;
+    border-left-color: black;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+#wd-profile-selected {
+    padding-left: 8px;
+    border-style: solid;
+    border-left-color: black;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+#wd-profile-selected a {
+    color: black;
+}
+
+.wd-profile-section {
+    max-width: 310px;
+    font-size: medium;
+    font-style: normal;
+    float: left;
+    height: 100%;
+    margin-top: 110px;
+    margin-left: 80px;
+}
+
+.wd-profile-section i {
+    color: grey;
+}
+
+.wd-profile-section h3 {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.wd-profile-section h4 {
+    font-weight: normal;
+}
+
+.wd-profile-section p {
+    margin-bottom: 30px;
+}
+
+.wd-profile-section ul {
+    list-style-type: none;
+    padding-left: 0pt;
+}
+
+.wd-profile-section a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-edit-profile-button {
+    font-size: medium;
+    font-style: normal;
+    float: right;
+    height: 100%;
+    margin-top: 110px;
+    margin-right: 10px;
+}
+
+.wd-profile-section label {
+    font-weight: bold;
+    font-size: large;
+}
+
+.wd-add-another-link a {
+    color: white;
+}
+
+.wd-dashboard {
+    width: 65%;
+    font-size: medium;
+    font-style: normal;
+    float: left;
+    height: 100%;
+    margin-top: 20px;
+    padding-left: -10px;
+}
+
+.wd-dashboard h2 {
+    display: inline-block;
+    font-weight: lighter;
+}
+
+.wd-dashboards {
+    width: 65%;
+    font-size: medium;
+    font-style: normal;
+    float: left;
+    height: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-left: -10px;
+}
+
+.wd-dashboards h2 {
+    display: inline-block;
+    font-weight: lighter;
+}
+
+.wd-published-courses {
+    padding-left: 10px;
+}
+
+.wd-published-courses h3 {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.wd-dashboards-cards a {
+    text-decoration: none;
+    color: grey;
+}
+
+.wd-card-container {
+    margin-top: 10px;
+}
+
+.wd-card-container .col {
+    width: 250px;
+}
+
+.wd-card-container .col a {
+    text-decoration: none;
+    color: grey;
+    text-overflow: ellipsis;
+}
+
+.wd-card-container .col a h6 {
+    text-decoration: none;
+    color: blue;
+    text-overflow: ellipsis;
+}
+
+.wd-home-list {
+    margin-left: -70px;
+}
+
+.wd-home-header {
+    margin-top: 20px;
+    padding-left: 13px;
+    display: inline-block;
+    overflow: hidden;
+    width: max-content;
+}
+
+.wd-home-header i {
+    color: red;
+}
+
+.wd-home-header nav {
+    padding-left: 20px;
+    display: inline-block;
+    --bs-breadcrumb-divider: '>';
+}
+
+.wd-home-header nav a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-modules {
+    padding-top: 0px;
+    float: left;
+    width: 60%;
+}
+
+.wd-modules .wd-modules-buttons {
+    float: right;
+}
+
+.wd-check-mark {
+    color: green;
+}
+
+.wd-modules .wd-modules-hr {
+    padding-top: 20px;
+}
+
+.wd-modules-lists {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.wd-modules-lists ul {
+    padding-bottom: 20px;
+}
+
+.wd-modules-lists-items {
+    margin-bottom: 50px;
+}
+
+.wd-modules-lists a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-link {
+    color: green;
+}
+
+.wd-buttons-and-links {
+    padding-top: 0px;
+    padding-left: 30px;
+    float: left;
+}
+
+.wd-buttons-and-links .wd-headers {
+    padding-bottom: 30px;
+}
+
+.wd-buttons-and-links .wd-button {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.wd-buttons-and-links .wd-todo {
+    padding-top: 20px;
+}
+
+.wd-buttons-and-links .wd-todo a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-buttons-and-links .wd-todo a i {
+    color: red;
+}
+
+.wd-buttons-and-links .wd-todo p {
+    font-size: small;
+}
+
+.wd-buttons-and-links .wd-todo .wd-link-small a {
+    font-size: small;
+}
+
+.wd-buttons-and-links .wd-todo hr {
+    width: 100%;
+}
+
+.wd-modules-full-width {
+    width: 100%;
+}
+
+.wd-modules-full-width .wd-modules-full-width-buttons {
+    float: right;
+}
+
+.wd-modules-full-width .wd-modules-hr {
+    padding-top: 20px;
+}
+
+.wd-modules-full-width-header {
+    height: 100px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.wd-modules-full-width-header .wd-header-content {
+    position: relative;
+    padding-top: 30px;
+    color: white;
+}
+
+.wd-modules-full-width-header .wd-header-content .wd-navigation {
+    color: white;
+}
+
+.wd-modules-full-width-header .wd-header-content .wd-navigation i {
+    color: white;
+}
+
+.wd-modules-full-width-header .wd-header-content .wd-navigation ul a {
+    color: red;
+}
+
+.wd-modules-full-width-header .wd-header-content .wd-navigation ul a i {
+    color: red;
+}
+
+.wd-modules-full-width-header .wd-header-content .wd-header-text {
+    text-align: center;
+}
+
+.wd-assignments {
+    padding-top: 100px;
+    float: none;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.wd-assignments .wd-assignments-search {
+    float: left;
+    font-size: small;
+}
+
+.wd-assignments .wd-assignments-buttons {
+    float: right;
+}
+
+.wd-assignments .wd-assignments-hr {
+    padding-top: 20px;
+}
+
+.wd-green-left-border {
+    border-left-width: medium;
+    border-left-color: green;
+}
+
+.wd-assignments-text {
+    text-align: left;
+    padding-left: 70px;
+    font-size: smaller;
+}
+
+.wd-assignments-text a {
+    color: black;
+}
+
+.wd-edit-assignments .assignment-forms {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-overflow: clip;
+}
+
+.wd-edit-assignments .assignment-forms .wd-submission-type {
+    width: 70%;
+}
+
+.wd-full-button-width {
+    width: 100%;
+}
+
+.wd-edit-footer {
+    margin-bottom: 60px;
+}
+
+.wd-edit-footer a {
+    text-decoration: none;
+}
+
+.wd-grades {
+    padding-top: 50px;
+}
+
+.wd-apply-filters {
+    margin-bottom: 10px;
+}
+
+.wd-student-link a {
+    text-decoration: none;
+    color: red;
+}
