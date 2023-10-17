@@ -12,7 +12,7 @@ function ModuleList() {
     (module) => module.course === courseId);
   return (
     <div class="d-none d-sm-none d-md-block d-xs-none">
-      <div className="wd-moduleList">
+      <div className="wd-modules">
         <div class="wd-modules-buttons">
           <button type="button" class="btn btn-secondary btn-sm">Collapse All</button>
           <button type="button" class="btn btn-secondary btn-sm">View Progress</button>

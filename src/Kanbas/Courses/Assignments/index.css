@@ -53,7 +53,7 @@
 }
 
 #wd-account-grey i {
-    color: grey;
+    color:grey;
 }
 
 #wd-sidebar-selected {
@@ -283,8 +283,8 @@
 }
 
 .wd-modules {
-    padding-top: 100px;
-    float: left;
+    padding-top: 0px;
+    float:left;
     width: 60%;
 }
 
@@ -305,6 +305,7 @@
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
+    width: 100%;
 }
 
 .wd-modules-list ul {
@@ -324,6 +325,48 @@
     color: green;
 }
 
+.wd-buttons-and-links {
+    padding-top: 100px;
+    padding-left: 30px;
+    float:left;
+}
+
+.wd-buttons-and-links .wd-headers {
+    padding-bottom: 30px;
+}
+
+.wd-buttons-and-links .wd-button {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.wd-buttons-and-links .wd-todo {
+    padding-top: 20px;
+}
+
+.wd-buttons-and-links .wd-todo a {
+    color:red;
+    text-decoration: none;
+}
+
+.wd-buttons-and-links .wd-todo a i {
+    color:red;
+}
+
+.wd-buttons-and-links .wd-todo p{
+    font-size: small;
+}
+
+.wd-buttons-and-links .wd-todo .wd-link-small a{
+    font-size: small;
+}
+
+.wd-buttons-and-links .wd-todo hr {
+    width: 100%;
+}
 
 .wd-modules-full-width {
     width: 100%;
@@ -439,7 +482,7 @@
     margin-bottom: 10px;
 }
 
-.wd-student-link a {
+.wd-student-link a{
     text-decoration: none;
-    color: red;
+    color:red;
 }

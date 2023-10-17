@@ -9,7 +9,8 @@ function Assignments() {
   const { courseId } = useParams();
   const assignments = db.assignments;
   const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId);
+    (assignment) => assignment.course === courseId
+  );
   return (
     <div className="wd-assignments">
       <div class="wd-assignments-search float-start w-25">
@@ -27,54 +28,54 @@ function Assignments() {
       <div class="wd-assignments-hr">
         <hr />
       </div>
-      <ul class="list-group list-group-horizontal wd-modules-list">
-        <li class="list-group-item list-group-item-secondary rounded-0">
-          <div class="float-start">
-            <FaEllipsisV className="text" />
-            <FaEllipsisV className="text pe-2" />
-            <FaSortDown className="text pe-1" />
-            Assignments
-          </div>
-          <div class="float-end">
-            <button type="button" class="btn btn-secondary btn-sm rounded-pill">
-              <FaPlus className="text" />40% of Total</button>
-            <FaPlus className="text" />
-            <FaEllipsisV className="text" />
-          </div>
-        </li>
-      </ul>
       <div className="wd-modules-list-items">
+        <ul class="list-group list-group-horizontal wd-modules-list">
+          <li class="list-group-item list-group-item-secondary rounded-0">
+            <div class="float-start">
+              <FaEllipsisV className="text" />
+              <FaEllipsisV className="text pe-2" />
+              <FaSortDown className="text pe-1" />
+              Assignments
+            </div>
+            <div class="float-end">
+              <button type="button" class="btn btn-secondary btn-sm rounded-pill">
+                <FaPlus className="text" />40% of Total</button>
+              <FaPlus className="text" />
+              <FaEllipsisV className="text" />
+            </div>
+          </li>
+        </ul>
         {courseAssignments.map((assignment) => (
-          <div className="list-group list-group-horizontal wd-modules-list">
-            <li class="list-group-item rounded-0 wd-green-left-border">
-              <div class="float-start">
-                <FaEllipsisV className="text" />
-                <FaEllipsisV className="text pe-2" />
-                <FaEdit className="text wd-link" />
-              </div>
-              <div class="float-end">
-                <FaCheckCircle className="text wd-link wd-check-mark" />
-                <FaEllipsisV className="text ps-2" />
-              </div>
-              <div class="wd-assignments-text">
-                <div className="wd-link-bold">
-                  <Link
-                    key={assignment._id}
-                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                    className="">
-                    {assignment.title}
-                  </Link>
+          <div className="list-group">
+            <ul class="list-group list-group-horizontal wd-modules-list">
+              <li class="list-group-item rounded-0 wd-green-left-border">
+                <div class="float-start">
+                  <FaEllipsisV className="text" />
+                  <FaEllipsisV className="text pe-2" />
+                  <FaEdit className="text wd-link" />
                 </div>
-                <p> Week 3- Bootstrap<br />
-                  Due Oct 10, 2022</p>
-              </div>
-            </li>
+                <div class="float-end">
+                  <FaCheckCircle className="text wd-link wd-check-mark" />
+                  <FaEllipsisV className="text ps-2" />
+                </div>
+                <div class="wd-assignments-text">
+                  <div className="wd-link-bold">
+                    <Link
+                      key={assignment._id}
+                      to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                      className="">
+                      {assignment.title}
+                    </Link>
+                  </div>
+                  <p> Week 0 - SETUP<br />
+                    Due Sep 18, 2022</p>
+                </div>
+              </li>
+            </ul>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
-
 export default Assignments;
