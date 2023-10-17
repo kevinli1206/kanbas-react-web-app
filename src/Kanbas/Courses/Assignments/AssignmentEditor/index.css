@@ -300,26 +300,6 @@
     padding-top: 20px;
 }
 
-.wd-modules-list {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.wd-modules-list ul {
-    padding-bottom: 20px;
-}
-
-.wd-modules-list-items {
-    margin-bottom: 50px;
-}
-
-.wd-modules-list a {
-    color: red;
-    text-decoration: none;
-}
-
 .wd-link {
     color: green;
 }

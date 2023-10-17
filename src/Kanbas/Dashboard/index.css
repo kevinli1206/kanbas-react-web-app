@@ -294,7 +294,7 @@
     padding-top: 20px;
 }
 
-.wd-modules-list {
+/* .wd-modules-list {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -308,7 +308,7 @@
 .wd-modules-list a {
     color: red;
     text-decoration: none;
-}
+} */
 
 .wd-link {
     color: green;

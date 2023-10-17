@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import "./index.css";
 import { FaPlus, FaEllipsisV, FaSortDown, FaEdit, FaCheckCircle } from "react-icons/fa";
 import db from "../../Database";
+import "./index.css"
 
 
 function Assignments() {
@@ -29,7 +30,7 @@ function Assignments() {
         <hr />
       </div>
       <div className="wd-modules-list-items">
-        <ul class="list-group list-group-horizontal wd-modules-list">
+        <ul class="list-group wd-modules-list">
           <li class="list-group-item list-group-item-secondary rounded-0">
             <div class="float-start">
               <FaEllipsisV className="text" />
@@ -47,7 +48,7 @@ function Assignments() {
         </ul>
         {courseAssignments.map((assignment) => (
           <div className="list-group">
-            <ul class="list-group list-group-horizontal wd-modules-list">
+            <ul class="list-group wd-modules-list">
               <li class="list-group-item rounded-0 wd-green-left-border">
                 <div class="float-start">
                   <FaEllipsisV className="text" />
@@ -78,4 +79,5 @@ function Assignments() {
     </div>
   );
 }
+
 export default Assignments;

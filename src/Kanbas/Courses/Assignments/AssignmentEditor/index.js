@@ -1,17 +1,15 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import db from "../../../Database";
-import "./index.css";
 import { FaCheckCircle, FaEllipsisV, FaPlus, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "./index.css";
 
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
   const assignment = db.assignments.find(
     (assignment) => assignment._id === assignmentId);
-
-
   const { courseId } = useParams();
   const navigate = useNavigate();
   const handleSave = () => {
@@ -33,7 +31,7 @@ function AssignmentEditor() {
       <div class="wd-edit-assignments">
         <div class="mb-3">
           <label for="assignment-name" class="form-label">Assignment name</label>
-          <input type="text" class="form-control" id="assignment-name" value="A1 - ENV + HTML" />
+          <input type="text" class="form-control" id="assignment-name" value={assignment.title} />
         </div>
         <div class="mb-3">
           <textarea class="form-control" id="assignment-description" rows="5">
