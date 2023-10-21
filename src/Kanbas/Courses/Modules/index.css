@@ -313,6 +313,11 @@
     padding-top: 20px;
 }
 
+.wd-green-button {
+    background-color: green;
+    color: white;
+}
+
 /* .wd-modules-lists {
     display: flex;
     flex-direction: column;
