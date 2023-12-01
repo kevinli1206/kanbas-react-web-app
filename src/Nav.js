@@ -14,6 +14,12 @@ function Nav() {
         Hello</Link>
       <Link className="nav-link" to="/Kanbas">
         Kanbas</Link>
+        <Link
+        to="/project"
+        className="nav-link"
+      >
+        Project
+      </Link>
     </nav>
   );
 }
